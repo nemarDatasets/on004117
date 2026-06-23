@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on004117",
-  "source": "openneuro",
-  "source_id": "ds004117",
+  "pipeline_stage": "enriched",
   "title": "Sternberg Working Memory",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Julie Onton (data)": {},
     "Scott Makeig (data and curation)": {},
@@ -11,29 +11,95 @@
     "Dung Truong (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds004117.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2005.04.014.",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on004117",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004117",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.neuroimage.2005.04.014",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "National Institutes of Health NS047293"
+      "funder_name": "Swartz Foundation"
     },
     {
-      "funder_name": "Swartz Foundation"
+      "funder_name": "National Institutes of Health",
+      "award_number": "NS047293"
     }
-  ]
+  ],
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".fdt",
+    ".ipynb",
+    ".json",
+    ".md",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "This dataset contains scalp EEG recordings from 23 healthy young adults performing a modified Sternberg working memory task. Participants selectively memorized sequences of black letters while ignoring green distractor letters, then responded to probe letters during a recognition phase. The study investigates source-resolved EEG brain dynamics associated with working memory encoding, maintenance, and retrieval processes, with data collected at multiple sampling rates (250-1000 Hz) from 71 electrode channels.",
+  "methods_description": "Scalp EEG data were collected from 71 channels (69 scalp and 2 periocular electrodes) referred to right mastoid at sampling rates of 250 Hz (subjects 1-12), 1000 Hz (subject 14), or 500 Hz (subjects 15-24), with analog passband 0.01-100 Hz. Participants performed a modified Sternberg task consisting of 3-4 blocks of 25 trials each, with each trial including letter sequence presentation (8 letters over 1.2s each with 0.2s ISI), memory maintenance (2-4s), probe presentation, and auditory feedback.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "working memory"
+    },
+    {
+      "term": "Sternberg task"
+    },
+    {
+      "term": "source localization"
+    },
+    {
+      "term": "cognitive neuroscience"
+    },
+    {
+      "term": "frontal midline theta"
+    },
+    {
+      "term": "memory encoding"
+    },
+    {
+      "term": "memory maintenance"
+    },
+    {
+      "term": "memory retrieval"
+    },
+    {
+      "term": "selective attention"
+    },
+    {
+      "term": "EEGManyLabs"
+    }
+  ],
+  "source_hash": "2247e779722a0a6cce9f86e92ac5936432140cca7886d84d65056b15a1a57387"
 }
