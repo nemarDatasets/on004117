@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on004117-blue)](https://doi.org/10.82901/nemar.on004117)
+
 ## Modified Sternberg Working Memory Experiment
 
 **Project name:** EEG and working memory
