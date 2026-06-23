@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Sternberg Working Memory",
+  "description": "This dataset comprises scalp EEG recordings from 23 healthy young adults performing a modified Sternberg working memory task. Participants selectively memorized sequences of letters while ignoring distractors, maintained them during a delay period, and responded to probe letters via button press. The study investigates source-resolved EEG brain dynamics underlying working memory encoding, maintenance, and retrieval processes, with data collected at multiple sampling rates (250-1000 Hz) from 71 electrode channels.",
+  "methods_description": "Scalp EEG data were collected from 71 channels (69 scalp and 2 periocular electrodes) referred to right mastoid, with analog passband 0.01-100 Hz and sampling rates of 250 Hz (subjects 1-12), 1000 Hz (subject 14), or 500 Hz (subjects 15-24). Input impedances were maintained below 5 kOhms. Participants performed 3-4 blocks of 25 trials each, with each trial comprising letter sequence presentation (8 letters over 9.6s), memory maintenance (2-4s), probe presentation, and auditory feedback.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -11,12 +13,39 @@
     "Dung Truong (curation)": {},
     "Kay Robbins (curation)": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds004117.v1.0.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "working memory"
+    },
+    {
+      "term": "Event-Related Potentials, P300",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
+    },
+    {
+      "term": "Sternberg task"
+    },
+    {
+      "term": "source localization"
+    },
+    {
+      "term": "cognitive neuroscience"
+    },
+    {
+      "term": "frontal midline"
+    },
+    {
+      "term": "HED annotation"
+    },
+    {
+      "term": "EEGManyLabs"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1016/j.neuroimage.2005.04.014.",
       "identifier_type": "DOI",
@@ -36,6 +65,11 @@
       "identifier": "10.1016/j.neuroimage.2005.04.014",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds004117.v1.0.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -45,14 +79,18 @@
     {
       "funder_name": "National Institutes of Health",
       "award_number": "NS047293"
+    },
+    {
+      "funder_name": "National Institutes of Health",
+      "award_number": "R01 NS047293"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "6.2 GB (196 files)"
   ],
   "formats": [
     ".fdt",
@@ -62,44 +100,8 @@
     ".set",
     ".tsv",
     ".txt",
-    ".xlsx"
+    ".xlsx",
+    ".yml"
   ],
-  "description": "This dataset contains scalp EEG recordings from 23 healthy young adults performing a modified Sternberg working memory task. Participants selectively memorized sequences of black letters while ignoring green distractor letters, then responded to probe letters during a recognition phase. The study investigates source-resolved EEG brain dynamics associated with working memory encoding, maintenance, and retrieval processes, with data collected at multiple sampling rates (250-1000 Hz) from 71 electrode channels.",
-  "methods_description": "Scalp EEG data were collected from 71 channels (69 scalp and 2 periocular electrodes) referred to right mastoid at sampling rates of 250 Hz (subjects 1-12), 1000 Hz (subject 14), or 500 Hz (subjects 15-24), with analog passband 0.01-100 Hz. Participants performed a modified Sternberg task consisting of 3-4 blocks of 25 trials each, with each trial including letter sequence presentation (8 letters over 1.2s each with 0.2s ISI), memory maintenance (2-4s), probe presentation, and auditory feedback.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "working memory"
-    },
-    {
-      "term": "Sternberg task"
-    },
-    {
-      "term": "source localization"
-    },
-    {
-      "term": "cognitive neuroscience"
-    },
-    {
-      "term": "frontal midline theta"
-    },
-    {
-      "term": "memory encoding"
-    },
-    {
-      "term": "memory maintenance"
-    },
-    {
-      "term": "memory retrieval"
-    },
-    {
-      "term": "selective attention"
-    },
-    {
-      "term": "EEGManyLabs"
-    }
-  ],
-  "source_hash": "2247e779722a0a6cce9f86e92ac5936432140cca7886d84d65056b15a1a57387"
+  "source_hash": "0db08cc577e7f55d52668b39aa0abaf54ab6cb307a50c549ddd49e475251d366"
 }
