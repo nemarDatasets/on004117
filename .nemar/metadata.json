@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Sternberg Working Memory",
-  "description": "This dataset comprises scalp EEG recordings from 23 healthy young adults performing a modified Sternberg working memory task. Participants selectively memorized sequences of letters while ignoring distractors, maintained them during a delay period, and responded to probe letters via button press. The study investigates source-resolved EEG brain dynamics underlying working memory encoding, maintenance, and retrieval processes, with data collected at multiple sampling rates (250-1000 Hz) from 71 electrode channels.",
-  "methods_description": "Scalp EEG data were collected from 71 channels (69 scalp and 2 periocular electrodes) referred to right mastoid, with analog passband 0.01-100 Hz and sampling rates of 250 Hz (subjects 1-12), 1000 Hz (subject 14), or 500 Hz (subjects 15-24). Input impedances were maintained below 5 kOhms. Participants performed 3-4 blocks of 25 trials each, with each trial comprising letter sequence presentation (8 letters over 9.6s), memory maintenance (2-4s), probe presentation, and auditory feedback.",
+  "description": "This dataset contains scalp EEG recordings from 23 healthy young adults performing a Modified Sternberg Working Memory task, in which participants memorized subsets of letters while ignoring others, then responded to probe letters after a maintenance period. The study, conducted at the Swartz Center for Neural Computation (UCSD) in 2004-05, was designed to examine source-resolved EEG brain dynamics related to working memory encoding, maintenance, and retrieval. The dataset was curated and annotated using the Hierarchical Event Descriptors (HED) framework and shared via OpenNeuro and NEMAR in BIDS format.",
+  "methods_description": "EEG data were collected from 71 electrodes (69 scalp and 2 periocular), referenced to the right mastoid, using a Neurobehavioral Systems EEG system with an analog passband of 0.1-100 Hz. Sampling rates varied across subjects (250 Hz for subjects 1-12, 1000 Hz for subject 14, and 500 Hz for subjects 15-24). Each session consisted of 3-4 task blocks of 25 trials, with each trial involving letter sequence presentation, a memory maintenance period, a memory probe, and auditory feedback on response accuracy.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -21,28 +21,22 @@
       "term": "working memory"
     },
     {
+      "term": "Sternberg task"
+    },
+    {
       "term": "Event-Related Potentials, P300",
       "subject_scheme": "MeSH",
       "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D018913"
     },
     {
-      "term": "Sternberg task"
-    },
-    {
-      "term": "source localization"
+      "term": "HED annotation"
     },
     {
       "term": "cognitive neuroscience"
     },
     {
-      "term": "frontal midline"
-    },
-    {
-      "term": "HED annotation"
-    },
-    {
-      "term": "EEGManyLabs"
+      "term": "EEGManyLabs replication"
     }
   ],
   "related_identifiers": [
@@ -57,11 +51,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on004117",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1016/j.neuroimage.2005.04.014",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
@@ -70,6 +59,11 @@
       "identifier": "10.18112/openneuro.ds004117.v1.0.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on004117",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -79,10 +73,6 @@
     {
       "funder_name": "National Institutes of Health",
       "award_number": "NS047293"
-    },
-    {
-      "funder_name": "National Institutes of Health",
-      "award_number": "R01 NS047293"
     }
   ],
   "resource_type_specific": "EEG Dataset",
